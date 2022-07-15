@@ -1,0 +1,98 @@
+.banking__list {
+  margin: 0px;
+  margin-bottom: 96px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.banking__item {
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+}
+
+.banking__item::before {
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 32px;
+  width: 106px;
+  height: 106px;
+  background-color: #36536b;
+  border-radius: 50%;
+  content: '';
+}
+
+.banking__item:nth-child(1)::before {
+  background-image: url("/img/personal-img.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50% 50%;
+}
+
+.banking__item:nth-child(2)::before {
+  background-image: url("/img/coverage-img.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50% 50%;
+}
+
+.banking__item:nth-child(3)::before {
+  background-image: url("/img/consumer-img.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50% 50%;
+}
+
+
+.banking__title {
+  margin: 0px;
+  margin-bottom: 16px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.138462px;
+  color: #36536b;
+}
+
+.banking__desc {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.115385px;
+  color: #36536b;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+
+@media only screen and (max-width:931px) {
+  .banking__item {
+    max-width: 223px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:601px) {
+  .banking__list {
+    margin-bottom: 80px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banking__item {
+    max-width: 328px;
+    width: 100%;
+  }
+
+  .banking__item ~ .banking__item {
+    margin-top: 48px;
+  }
+}

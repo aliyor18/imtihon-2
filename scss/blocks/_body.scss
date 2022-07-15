@@ -1,0 +1,36 @@
+.body {
+  background-color: #edf3f8;
+  background-image: url("/img/body-bg.png"),
+                    url("/img/body-bg.png");
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position: calc(50% + 450px) -11%, calc(50% + 700px) 72%;
+}
+
+@media only screen and (max-width:956px) {
+  .body {
+    background-size: 1050px 950px;
+    background-position: calc(50% + 0px) -26%, calc(50% + 700px) 72%;
+  }
+}
+
+@media only screen and (max-width:931px) {
+  .body {
+    background-size: 1050px 950px;
+    background-position: calc(50% + 0px) -26%,;
+  }
+}
+
+@media only screen and (max-width:611px) {
+  .body {
+    background-size: 780px 780px;
+    background-position: 50% -19.5%;
+  }
+} 
+
+@media only screen and (max-width:601px) {
+  .body {
+    background-size: 780px 780px;
+    background-position: 50% -14.5%;
+  }
+} 

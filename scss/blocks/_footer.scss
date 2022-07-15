@@ -1,0 +1,134 @@
+.footer {
+  padding: 31px 0px;
+  background-color: #1b262f;
+  background-image: url("/img/body-bg.png");
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position: calc(50% + 710px) 20%;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.footer__logo-img {
+  width: 135px;
+  height: 38px;
+}
+
+.footer__list {
+  margin: 0px;
+  margin-left: 64px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__item ~ .footer__item {
+  margin-left: 40px;
+}
+
+.footer__link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(251, 252, 254, 0.7);
+  mix-blend-mode: normal;
+}
+
+.footer__icons {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  @include flex
+}
+
+.icons__item ~ .icons__item {
+  margin-left: 24px;
+}
+
+.icons__link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.icons__img {
+  width: 24px;
+  height: 24px;
+}
+
+.icons__img:hover path {
+  fill: #da6d97;
+}
+
+.icons__img:active path {
+  opacity: 0.4;
+}
+
+.footer__link:hover {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fbfcfe;
+}
+
+.footer__link:active {
+  opacity: 0.4;
+}
+
+@media only screen and (max-width:811px) {
+  .footer {
+    background-position: calc(50% + 350px) 20%;
+  }
+}
+
+@media only screen and (max-width:601px) {
+  .footer__inner {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer__info {
+    flex-direction: column;
+  }
+
+  .footer__list {
+    margin-bottom: 40px;
+    margin-left: 0px;
+    flex-direction: column;
+  }
+
+  .footer__item ~ .footer__item {
+    margin-top: 31px;
+    margin-left: 0px;
+  }
+
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+
+  .footer {
+    background-position: 50% -38%;
+  }
+}

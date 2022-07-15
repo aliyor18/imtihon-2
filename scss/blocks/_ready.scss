@@ -1,0 +1,109 @@
+.ready__inner {
+  margin-bottom: 96px;
+  @include flex
+}
+
+.ready__title {
+  margin: 0px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+
+.ready__form {
+  position: relative;
+  z-index: 5;
+  max-width: 445px;
+  width: 100%;
+}
+
+.ready__input {
+  width: 100%;
+  padding: 15px 190px 15px 27px;
+  outline: none;
+  border: none;
+  background-color: #fbfcfe;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536b;
+}
+
+.ready__input::placeholder {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536b;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.ready__button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding: 15px 25px;
+  border: none;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  color: #fbfcfe;
+  background-color: #ba4270;
+  border-radius: 24px;
+}
+
+.ready__button:hover {
+  background-color: #da6D97;
+}
+
+.ready__button:active {
+  opacity: 0.4;
+}
+
+@media only screen and (max-width:811px) {
+  .ready__inner {
+    margin-bottom: 100px;
+    flex-direction: column;
+  }
+
+  .ready__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width:515px) {
+  .ready__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .ready__button {
+    position: relative;
+    width: 100%;
+  }
+
+  .ready__form {
+    max-width: 327px;
+    width: 100%;
+  }
+
+  .ready__input {
+    margin-bottom: 16px;
+    padding: 15px 27px;
+  }
+}
+

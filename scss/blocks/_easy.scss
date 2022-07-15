@@ -1,0 +1,77 @@
+.easy__inner {
+  margin-bottom: 150px;
+  max-width: 1015px;
+  width: 100%;
+  @include flex
+}
+
+.easy__img {
+  border-radius: 8.5px;
+}
+
+.easy__info {
+  max-width: 445px;
+  width: 100%;
+}
+
+.easy__title {
+  margin: 0px;
+  margin-bottom: 24px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+
+.easy__desc {
+  margin: 0px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+}
+
+
+@media only screen and (max-width:931px) {
+  .easy__inner {
+    margin-bottom: 100px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .easy__img {
+    margin-bottom: 48px;
+  }
+
+  .easy__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .easy__info {
+    max-width: 573px;
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width:515px) {
+  .easy__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .easy__info {
+    max-width: 329px;
+    width: 100%;
+  }
+
+  .easy__inner {
+    margin-bottom: 80px;
+  }
+}
